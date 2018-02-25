@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.mvc.View?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<View fx:id="secondary" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="350.0" stylesheets="@secondary.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ksort.views.SecondaryPresenter">
+ <center>
+     <AnchorPane>
+     <VBox alignment="CENTER" prefHeight="450.0" prefWidth="350.0" spacing="10.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label prefHeight="42.0" prefWidth="192.0" text="Максимальное значение для генератора случайных чисел:" textFill="#db0d35" wrapText="true" />
+            <TextField fx:id="edit2" alignment="CENTER" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#handleButton3Action" prefWidth="50.0" text="100" />            
+            <Button fx:id="button3" defaultButton="true" mnemonicParsing="false" onAction="#handleButton3Action" text="Задать" />
+            <Label fx:id="label3" text="Случайные числа генерируются от 0 до " textFill="#db0d35" />
+               <Separator prefWidth="200.0" />
+               <Label prefHeight="234.0" prefWidth="350.0" text="Автор программы: Картузов Александр Вячеславович, кандидат педагогических наук, доцент кафедры автоматики и управления в технических системах Чувашского государственного университета им. И.Н. Ульянова. Ksort - учебный пример по переносу приложения JavaFX на Android и iOS с помощью кросс-платформенной библиотеки Gluon. В нем производится заполнение массива случайными числами в заданном диапазоне и его сортировка встроенными методами коллекций Java." textAlignment="CENTER" wrapText="true">
+                  <opaqueInsets>
+                     <Insets />
+                  </opaqueInsets>
+                  <padding>
+                     <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                  </padding>
+                  <VBox.margin>
+                     <Insets />
+                  </VBox.margin>
+               </Label>            
+         </children>
+      </VBox>
+      </AnchorPane>
+ </center>      
+</View>
